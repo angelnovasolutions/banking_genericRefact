@@ -334,7 +334,7 @@ public class FileServiceImpl implements FileService {
 						                  "\"nombre\":\"Plazo\","+
 						                  "\"longField\":\"1\","+
 						                  "\"start\":\"216\","+
-						                  "\"end\":\"218\","+
+						                  "\"end\":\"217\","+
 						                  "\"format\":\"9\","+
 						                  "\"validation\":{"+
 						                     "\"integer\":1,"+
@@ -521,20 +521,16 @@ public class FileServiceImpl implements FileService {
 			else if (json[i].substring(0,2).equals("99"))
 				operation = "footer";
 			
-			System.out.print("operation: ");
-			System.out.println(operation);
-			
+System.out.print("operation: ");
+System.out.println(operation);
 		
-			
 			@SuppressWarnings("unchecked")
 			List<FileFields> lstOperation = ((List<FileFields>)mpConfiguration.get(operation));
 			
-			
 			concatenateTransacction(lstOperation, json[i], customerFiles, fileDetails);
 			
-			
-			System.out.print("lstOperation: ");
-			System.out.println(lstOperation.size());
+System.out.print("lstOperation: ");
+System.out.println(lstOperation.size());
 		}
 		
 		
